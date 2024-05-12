@@ -4,7 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
 
-  r1:
+  r7:
     runs-on: windows-latest
     steps:
     - name: Download
@@ -21,7 +21,7 @@ jobs:
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp --region us-cal-1 3389
 
-  r2:
+  r8:
     runs-on: windows-latest
     steps:
     - name: Download
@@ -38,7 +38,7 @@ jobs:
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp --region us-cal-1 3389
 
-  r3:
+  r9:
     runs-on: windows-latest
     steps:
     - name: Download
@@ -55,7 +55,7 @@ jobs:
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp --region us-cal-1 3389
 
-  r4:
+  r10:
     runs-on: windows-latest
     steps:
     - name: Download
@@ -72,7 +72,7 @@ jobs:
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp --region us-cal-1 3389
 
-  r5:
+  r11:
     runs-on: windows-latest
     steps:
     - name: Download
