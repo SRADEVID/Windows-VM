@@ -3,7 +3,7 @@ name: Windows
 on: [push, workflow_dispatch]
 
 jobs:
-  r23:
+  r15:
     runs-on: windows-latest
     steps:
     - name: Download Ngrok.
@@ -14,7 +14,7 @@ jobs:
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.
-      run: .\ngrok\ngrok.exe authtoken 2gXz2t0njK83DVwyE46QHQQTwqv_6mVDZthEuFdsQFDF3PTkV
+      run: .\ngrok\ngrok.exe authtoken 2gb4NhHlpWuYJJX2gfvlz6mokmk_gz2A9vCKwR9D2qa9rNfG
     - name: Enabling access to Windows OS.
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
@@ -27,7 +27,7 @@ jobs:
     - name: Successfully made!You can close the tab now.
       run: cmd /c loop.bat
 
-  r24:
+  r16:
     runs-on: windows-latest
     steps:
     - name: Download Ngrok.
@@ -38,7 +38,7 @@ jobs:
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.
-      run: .\ngrok\ngrok.exe authtoken 2gXzmWoZsBbYKvczH0x1UlXSNte_7wiqbnZHMemLYgB5CvW2p
+      run: .\ngrok\ngrok.exe authtoken 2gb4o793eXv8j7Z62e7vOqTlPIb_6St1wcAJfqEzSKhTMPLRX
     - name: Enabling access to Windows OS.
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
@@ -51,7 +51,55 @@ jobs:
     - name: Successfully made!You can close the tab now.
       run: cmd /c loop.bat
 
-  r25:
+  r17:
+    runs-on: windows-latest
+    steps:
+    - name: Download Ngrok.
+      run: |
+        Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
+    - name: Extract Ngrok File.
+      run: Expand-Archive ngrok.zip
+    - name: Connect to Ngrok.
+      run: .\ngrok\ngrok.exe authtoken 2gb58E6c3GzUkqIi0bwDlcpvZrO_5b8tv6kvJCSr7tJ9Lod7o
+    - name: Enabling access to Windows OS.
+      run: | 
+        Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+        Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+        Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+    - name: Open Tunnel.
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region us-cal-1 3389"'
+    - name: Сonnect to your Windows OS.
+      run: cmd /c start.bat
+    - name: Successfully made!You can close the tab now.
+      run: cmd /c loop.bat
+
+  r18:
+    runs-on: windows-latest
+    steps:
+    - name: Download Ngrok.
+      run: |
+        Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
+    - name: Extract Ngrok File.
+      run: Expand-Archive ngrok.zip
+    - name: Connect to Ngrok.
+      run: .\ngrok\ngrok.exe authtoken 2gb5VjNaHXuwNjDectFNxcePNmm_8a2nn8jEDnJoajqU4xuPs
+    - name: Enabling access to Windows OS.
+      run: | 
+        Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+        Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+        Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+    - name: Open Tunnel.
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region us-cal-1 3389"'
+    - name: Сonnect to your Windows OS.
+      run: cmd /c start.bat
+    - name: Successfully made!You can close the tab now.
+      run: cmd /c loop.bat
+
+  r19:
     runs-on: windows-latest
     steps:
     - name: Download Ngrok.
