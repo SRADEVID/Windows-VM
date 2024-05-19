@@ -9,7 +9,7 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://vmosui.000webhostapp.com/win10/CTF.zip -OutFile CTF.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/CTF.zip -OutFile CTF.zip
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
@@ -37,7 +37,7 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://vmosui.000webhostapp.com/win10/CTF.zip -OutFile CTF.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/CTF.zip -OutFile CTF.zip
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
@@ -65,7 +65,7 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://vmosui.000webhostapp.com/win10/CTF.zip -OutFile CTF.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/CTF.zip -OutFile CTF.zip
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
@@ -93,7 +93,7 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://vmosui.000webhostapp.com/win10/CTF.zip -OutFile CTF.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/CTF.zip -OutFile CTF.zip
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
@@ -121,7 +121,7 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://vmosui.000webhostapp.com/win10/CTF.zip -OutFile CTF.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/CTF.zip -OutFile CTF.zip
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/VMOSUI/Windows-OS/main/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
