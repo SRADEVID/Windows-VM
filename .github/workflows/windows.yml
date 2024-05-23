@@ -101,7 +101,7 @@ jobs:
         Expand-Archive ngrok.zip
         Expand-Archive CTF.zip
     - name: Connect to Ngrok.
-      run: .\ngrok\ngrok.exe authtoken 2gb5VjNaHXuwNjDectFNxcePNmm_8a2nn8jEDnJoajqU4xuPs
+      run: .\ngrok\ngrok.exe authtoken 2fueSGiMcaeG4WjlCv0v87EJpUW_5AFoVZUdD3hYf6qoSNANX
     - name: Enabling access to Windows OS.
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
